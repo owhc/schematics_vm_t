@@ -38,7 +38,7 @@ variable "vm-cores" {
 }
 
 variable "vm-memory" {
-  default = 4096
+  default = 1024
   description = "The amount of memory to allocate, expressed in MBs."
 }
 
