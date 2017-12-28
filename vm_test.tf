@@ -1,4 +1,4 @@
-resource "ibm_compute_vm_instance" "twc_terraform_sample" {
+resource "ibm_compute_vm_instance" "oc_vm_provisioning" {
     hostname = "${var.vm-hostname}"
     domain = "${var.vm-domain}"
     os_reference_code = "${var.vm-os-reference-code}"
