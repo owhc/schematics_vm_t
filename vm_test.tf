@@ -10,7 +10,6 @@ resource "ibm_compute_vm_instance" "twc_terraform_sample" {
     memory = ${var.vm-memory}
     disks = [25]
     user_metadata = "{\"value\":\"newvalue\"}"
-    dedicated_acct_host_only = false
     local_disk = false
     public_vlan_id = 2200297
     private_vlan_id = 2190899
