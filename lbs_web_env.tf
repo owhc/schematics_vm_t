@@ -1,6 +1,6 @@
 resource "ibm_compute_vm_instance" "vm_instances" {
-    count="2"
-    hostname = "${var.vm-hostname}"
+    count=2
+    hostname = "${var.vm-hostname}-${count.index}"
     domain = "${var.vm-domain}"
     os_reference_code = "${var.vm-os-reference-code}"
     datacenter = "${var.datacenter}"
