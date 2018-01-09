@@ -26,9 +26,9 @@ resource "ibm_lbaas" "lbaas" {
   subnets     = [633872]
 
   protocols = [{
-      frontend_protocol     = "HTTP"
+      frontend_protocol     = "TCP"
       frontend_port         = 80
-      backend_protocol      = "HTTP"
+      backend_protocol      = "TCP"
       backend_port          = 80
       load_balancing_method = "round_robin"
     },
