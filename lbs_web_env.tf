@@ -23,7 +23,7 @@ resource "ibm_compute_vm_instance" "vm_instances" {
 resource "ibm_lbaas" "lbaas" {
   name        = "ibmCloudLBS"
   description = "delete this plz"
-  subnets     = [974315]
+  subnets     = [633872]
 
   protocols = [{
     frontend_protocol     = "HTTPS"
