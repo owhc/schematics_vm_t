@@ -1,0 +1,34 @@
+{
+ "description": "Optional description of the environment",
+ "frozen": false,
+ "name": "vm_auto_provisioning",
+ "sourceurl": "https://github.com/owhc/schematics_vm_t",
+ "tags": [
+   "test",
+   "optional_tag_2"
+ ],
+ "variablestore": [
+   {
+     "name": "visible_string_variable",
+     "secure": false,
+     "value": "Visible value"
+   },
+   {
+     "name": "secret_string_variable",
+     "secure": true,
+     "value": "Secured value"
+   },
+   {
+     "name": "visible_map_variable",
+     "secure": false,
+     "type": "map",
+     "value": "{ \"key_1\" = \"value_1\", \"key_2\" = \"value_2\", \"key_3\" = \"value_3\" }"
+   },
+   {
+     "name": "visible_list_variable",
+     "secure": false,
+     "type": "list",
+     "value": "[ \"value_1\", \"value_2\", \"value_3\" ]"
+   }
+ ]
+}
