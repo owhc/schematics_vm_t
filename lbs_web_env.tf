@@ -17,7 +17,7 @@ resource "ibm_compute_vm_instance" "vm_instances" {
     public_vlan_id = 2200297
     private_vlan_id = 2190899
     private_security_group_ids = [241753,241755]
-    public_security_group_ids = [241749,241755]
+    public_security_group_ids = [241755]
     user_metadata = "${file("init.yml")}"
     #post_install_script_uri = "${var.vm-install-script}"
 }
