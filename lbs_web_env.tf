@@ -4,7 +4,7 @@ resource "ibm_compute_vm_instance" "vm_instances" {
     domain = "${var.vm-domain}"
     os_reference_code = "${var.vm-os-reference-code}"
     datacenter = "${var.datacenter}"
-    network_speed = 10
+    network_speed = 100
     hourly_billing = true
     private_network_only = false
     /* cores = ${var.vm-cores} */
