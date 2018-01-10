@@ -18,6 +18,7 @@ resource "ibm_compute_vm_instance" "vm_instances" {
     private_vlan_id = 2190899
     private_security_group_ids = [241753,241755]
     public_security_group_ids = [241749]
+    user_metadata = "${file("init.yml")}"
 }
 
 resource "ibm_lbaas" "lbaas" {
