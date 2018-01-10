@@ -39,3 +39,9 @@ variable "vm-os-reference-code" {
   default = "CENTOS_7"
   description = "The operating system reference code that is used to provision the computing instance."
 }
+
+variable "vm-install-script" {
+  default = "https://raw.githubusercontent.com/owhc/schematics_vm_t/master/init.sh"
+  description = "The URI for the initial installation script."
+}
+
