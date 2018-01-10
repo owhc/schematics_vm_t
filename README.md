@@ -1,1 +1,1 @@
-# schematics_vm_t
+# Demo for auto provisioning infra components
