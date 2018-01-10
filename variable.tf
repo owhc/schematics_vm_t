@@ -10,21 +10,10 @@ provider "ibm" {
   softlayer_api_key = "${var.softlayer_api_key}"
 }
 
-variable "ssh-key" {
-  default = ""
-  description = "The public key contents for the SSH keypair."
-}
-
-variable "ssh-label" {
-  default = "ssh_key_scale_group"
-  description = "An identifying label to assign to the SSH key."
-}
-
 variable "datacenter" {
   default = "hkg02"
   description = "The data center for the local load balancer. You can run bluemix cs locations to see a list of all data centers in your region."
 }
-
 
 variable "vm-hostname" {
   default = "virtual-guest"
@@ -50,9 +39,3 @@ variable "vm-os-reference-code" {
   default = "CENTOS_7"
   description = "The operating system reference code that is used to provision the computing instance."
 }
-
-variable "vm-post-install-script-uri" {
-  default = "https://raw.githubusercontent.com/Cloud-Schematics/asg/master/nginx.sh"
-  description = "The URI for the NGINX install script."
-}
-
